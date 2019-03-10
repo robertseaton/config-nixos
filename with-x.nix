@@ -37,4 +37,8 @@
       xmodmap /etc/xmodmap
       '';
   };
+
+  environment.systemPackages = with pkgs; [
+    xfce.terminal emacs firefox mpv pavucontrol signal-desktop evince gnome3.nautilus calibre dmenu 
+  ];
 }
