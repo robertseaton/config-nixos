@@ -6,10 +6,12 @@
 
 {
   imports =
-    [ 
-      ../hardware-configuration.nix
+    [
       ../common.nix
       ../with-x.nix
+      ../is-laptop.nix
+      ../hardware-configuration.nix
+
     ];
 
   boot.loader.grub.device = "/dev/sdb"; # or "nodev" for efi only

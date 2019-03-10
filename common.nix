@@ -20,7 +20,7 @@
      isNormalUser = true;
      home = "/home/rps";
      shell = pkgs.fish;
-     extraGroups = [ "wheel" "networkmanager" ];
+     extraGroups = [ "wheel" "networkmanager" "libvirtd"];
   };
   security.sudo.wheelNeedsPassword = false;
   system.stateVersion = "18.09"; # Did you read the comment?
