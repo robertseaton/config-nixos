@@ -11,8 +11,8 @@ nixos configuration for {laptop, desktop, server}
 
 Example: 
 
-$ git clone git@github.com:robertseaton/config-nixos.git
-$ cd config-nixos
-$ cp hosts/example.nix hosts/my_new_machine.nix
-$ mg hosts/my_new_machine.nix
-$ ln -s hosts/my_new_machine.nix 
+    $ git clone git@github.com:robertseaton/config-nixos.git
+    $ cd config-nixos
+    $ cp hosts/example.nix hosts/my_new_machine.nix
+    $ mg hosts/my_new_machine.nix
+    $ ln -s hosts/my_new_machine.nix 
