@@ -8,7 +8,7 @@
   time.timeZone = "America/Chicago";
 
   environment.systemPackages = with pkgs; [
-     mg fish
+     mg fish git 
   ];
 
   nixpkgs.config.allowUnfree = true; 
