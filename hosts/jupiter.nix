@@ -20,7 +20,7 @@
   networking.hostName = "jupiter"; # Define your hostname.
   networking.hostId = "5f69a2bd";
 
-    services.zfs.autoSnapshot.enable = true;
+  services.zfs.autoSnapshot.enable = true;
   services.zfs.autoScrub.enable = true;
 
   # GPU passthrough stuff. 
