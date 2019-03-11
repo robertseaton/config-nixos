@@ -7,7 +7,7 @@
   time.timeZone = "America/Chicago";
 
   environment.systemPackages = with pkgs; [
-     mg fish git killall unison emacs mu
+     mg fish git killall unison emacs mu tmux
   ];
 
   nixpkgs.config.allowUnfree = true; 
