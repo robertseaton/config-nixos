@@ -2,6 +2,7 @@
 
 {
   networking.firewall.enable = false;
+  services.openssh.forwardX11 = true;
 
   sound.enable = true;
   hardware.pulseaudio = {
