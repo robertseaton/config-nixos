@@ -4,7 +4,6 @@
   boot.loader.grub.enable = true;
   boot.loader.grub.version = 2;
   boot.supportedFilesystems = [ "zfs" ];
-  networking.networkmanager.enable = true;
   time.timeZone = "America/Chicago";
 
   environment.systemPackages = with pkgs; [
