@@ -28,7 +28,6 @@
         haskellPackages.xmonad-contrib
         haskellPackages.xmonad-extras
         haskellPackages.xmonad
-	haskellPackages.xmobar
       ];
     };
     windowManager.default = "xmonad";
@@ -40,6 +39,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    xfce.terminal emacs firefox mpv pavucontrol signal-desktop evince gnome3.nautilus calibre dmenu 
+    xfce.terminal emacs firefox mpv pavucontrol signal-desktop evince gnome3.nautilus calibre dmenu haskellPackages.xmobar xmodmap
   ];
 }
