@@ -32,13 +32,18 @@
     };
     windowManager.default = "xmonad";
     desktopManager.xterm.enable = false;
+    desktopManager.gnome3.enable = true;
     displayManager.sessionCommands = with pkgs; lib.mkAfter
       ''
       xmodmap /etc/xmodmap
       '';
-  };
+      };
+
+    services.redshift.enable = true;
+    services.redshift.longitude = "41.889751";
+    services.redshift.latitude = "-87.988953";
 
   environment.systemPackages = with pkgs; [
-    xfce.terminal emacs firefox mpv pavucontrol signal-desktop evince gnome3.nautilus calibre dmenu haskellPackages.xmobar xmodmap
+    xfce.terminal emacs firefox mpv pavucontrol signal-desktop evince gnome3.nautilus calibre dmenu flatpak xdg-desktop-portal xdg-desktop-portal-gtk gnome2.GConf gnome3.dconf haskellPackages.xmobar xorg.xmodmap
   ];
 }
