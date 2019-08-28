@@ -45,6 +45,6 @@
     services.redshift.latitude = "-87.988953";
 
   environment.systemPackages = with pkgs; [
-    xfce.terminal emacs firefox mpv pavucontrol signal-desktop evince gnome3.nautilus calibre dmenu flatpak xdg-desktop-portal xdg-desktop-portal-gtk gnome2.GConf gnome3.dconf haskellPackages.xmobar xmodmap
+    xfce.terminal emacs firefox mpv pavucontrol signal-desktop evince gnome3.nautilus calibre dmenu flatpak xdg-desktop-portal xdg-desktop-portal-gtk gnome2.GConf gnome3.dconf haskellPackages.xmobar xorg.xmodmap
   ];
 }
