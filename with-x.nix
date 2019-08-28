@@ -28,18 +28,23 @@
         haskellPackages.xmonad-contrib
         haskellPackages.xmonad-extras
         haskellPackages.xmonad
-	haskellPackages.xmobar
+        haskellPackages.xmobar
       ];
     };
     windowManager.default = "xmonad";
     desktopManager.xterm.enable = false;
+    desktopManager.gnome3.enable = true;
     displayManager.sessionCommands = with pkgs; lib.mkAfter
       ''
       xmodmap /etc/xmodmap
       '';
-  };
+      };
+
+    services.redshift.enable = true;
+    services.redshift.longitude = "41.889751";
+    services.redshift.latitude = "-87.988953";
 
   environment.systemPackages = with pkgs; [
-    xfce.terminal emacs firefox mpv pavucontrol signal-desktop evince gnome3.nautilus calibre dmenu 
+    xfce.terminal emacs firefox mpv pavucontrol signal-desktop evince gnome3.nautilus calibre dmenu flatpak xdg-desktop-portal xdg-desktop-portal-gtk gnome2.GConf gnome3.dconf
   ];
 }
