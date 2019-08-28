@@ -20,6 +20,7 @@
     enable = true;
     libinput.enable = true; # touchpad support
     libinput.tapping = false;
+    wacom.enable = true;
     layout = "us";
     windowManager.xmonad = {
       enable = true;

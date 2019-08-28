@@ -20,8 +20,17 @@
   networking.hostName = "jupiter"; # Define your hostname.
   networking.hostId = "5f69a2bd";
 
-  services.zfs.autoSnapshot.enable = true;
   services.zfs.autoScrub.enable = true;
+
+  services.cron.enable = true;   
+  services.postgresql.enable = true;
+  services.postgresql.enableTCPIP = true;
+  services.postgresql.authentication = pkgs.lib.mkOverride 10 ''
+      local all all trust
+      host all all ::1/128 trust
+      host all all 192.168.2.120/24 trust
+  '';
+
 
   # GPU passthrough stuff. 
   virtualisation.libvirtd.enable = true;
